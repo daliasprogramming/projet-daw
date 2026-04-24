@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books | M&Ðᔕtore</title>
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body class="books-page">
+    <header>
+        <div class="header-left">
+            <div class="logo">M&Ð</div>
+            <div class="site-title">
+                <h1>M&Ðᔕtore</h1>
+                <p>Your Favorite Online Store</p>
+            </div>
+        </div>
+        <div class="header-right">
+           
+            <a href="logout.php" class="logout-btn">Logout</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="books.html" class="active">Books</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="page-header">
+            <h2>Books</h2>
+            <p> Reader fan, discover your best read in our library!</p>
+        </section>
+        
+        <section class="products-grid">
+            <div class="book-category">
+                <h3>Thriller:</h3>
+                <div class="books-row">
+                    <article class="product-card">
+                        <img src="images/books/a good guide.jpg" alt="A good guide">
+                        <div class="product-body">
+                            <h4>A Good Girl's Guide to Murder</h4>
+                            <p class="product-price">1900DA</p>
+                            <p class="product-desc">A young adult mystery thriller where Pip investigates a murder case that everyone thinks is solved, uncovering dark secrets in her town.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="1" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn" data-product-id="1" data-product-name="A Good Girl's Guide to Murder" data-product-price="1900">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/books/secret history.jpg" alt="The Secret History">
+                        <div class="product-body">
+                            <h4>The Secret History</h4>
+                            <p class="product-price">2100DA</p>
+                            <p class="product-desc">A dark psychological thriller about a group of classics students at a New England college who become entangled in murder and ancient rituals.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="2" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn" data-product-id="2" data-product-name="The Secret History" data-product-price="2100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/books/verity2.jpg" alt="Verity">
+                        <div class="product-body">
+                            <h4>Verity</h4>
+                            <p class="product-price">1800DA</p>
+                            <p class="product-desc">A gripping psychological thriller about a struggling writer who discovers a manuscript that reveals shocking truths about her husband's first wife.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="3" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn" data-product-id="3" data-product-name="Verity" data-product-price="1800">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="book-category">
+                <h3>Science Fiction:</h3>
+                <div class="books-row">
+                    <article class="product-card">
+                        <img src="images/books/harry potter.jpg" alt="Harry Potter saga selection">
+                        <div class="product-body">
+                            <h4 class="product-title">Harry Potter saga</h4>
+                            <p class="product-tag">7 titles available</p>
+                            <p class="product-price">2500DA</p>
+                            <label class="product-select-label" for="hp-select">Choose book:</label>
+                            <select id="hp-select" class="product-select" data-button-selector=".hp-select-btn">
+                                <option value="Harry Potter and the Sorcerer's Stone" data-id="4" data-price="2500">Harry Potter and the Sorcerer's Stone</option>
+                                <option value="Harry Potter and the Chamber of Secrets" data-id="10" data-price="2500">Harry Potter and the Chamber of Secrets</option>
+                                <option value="Harry Potter and the Prisoner of Azkaban" data-id="11" data-price="2500">Harry Potter and the Prisoner of Azkaban</option>
+                                <option value="Harry Potter and the Goblet of Fire" data-id="16" data-price="2500">Harry Potter and the Goblet of Fire</option>
+                                <option value="Harry Potter and the Order of the Phoenix" data-id="17" data-price="2500">Harry Potter and the Order of the Phoenix</option>
+                                <option value="Harry Potter and the Half-Blood Prince" data-id="18" data-price="2500">Harry Potter and the Half-Blood Prince</option>
+                                <option value="Harry Potter and the Deathly Hallows" data-id="19" data-price="2500">Harry Potter and the Deathly Hallows</option>
+                            </select>
+                            <p class="product-desc">Choose the Harry Potter title you want from the available set of 7 books, then click Add to Cart.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="4" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn hp-select-btn" data-product-id="4" data-product-name="Harry Potter and the Sorcerer's Stone" data-product-price="2500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/books/starwars.jpg" alt="Star Wars saga selection">
+                        <div class="product-body">
+                            <h4 class="product-title">Star Wars saga</h4>
+                            <p class="product-tag">19 titles available</p>
+                            <p class="product-price">2300DA</p>
+                            <label class="product-select-label" for="sw-select">Choose book:</label>
+                            <select id="sw-select" class="product-select" data-button-selector=".sw-select-btn">
+                                <option value="Star Wars: A New Hope" data-id="5" data-price="2300">Star Wars: A New Hope</option>
+                                <option value="Star Wars: The Empire Strikes Back" data-id="12" data-price="2300">Star Wars: The Empire Strikes Back</option>
+                                <option value="Star Wars: Return of the Jedi" data-id="13" data-price="2300">Star Wars: Return of the Jedi</option>
+                                <option value="Star Wars: The Phantom Menace" data-id="20" data-price="2300">Star Wars: The Phantom Menace</option>
+                                <option value="Star Wars: Attack of the Clones" data-id="21" data-price="2300">Star Wars: Attack of the Clones</option>
+                                <option value="Star Wars: Revenge of the Sith" data-id="22" data-price="2300">Star Wars: Revenge of the Sith</option>
+                                <option value="Star Wars: The Force Awakens" data-id="23" data-price="2300">Star Wars: The Force Awakens</option>
+                                <option value="Star Wars: The Last Jedi" data-id="24" data-price="2300">Star Wars: The Last Jedi</option>
+                                <option value="Star Wars: The Rise of Skywalker" data-id="25" data-price="2300">Star Wars: The Rise of Skywalker</option>
+                                <option value="Rogue One: A Star Wars Story" data-id="26" data-price="2300">Rogue One: A Star Wars Story</option>
+                                <option value="Solo: A Star Wars Story" data-id="27" data-price="2300">Solo: A Star Wars Story</option>
+                                <option value="Star Wars: Thrawn" data-id="28" data-price="2300">Star Wars: Thrawn</option>
+                                <option value="Star Wars: Bloodline" data-id="29" data-price="2300">Star Wars: Bloodline</option>
+                                <option value="Star Wars: Dark Lord" data-id="30" data-price="2300">Star Wars: Dark Lord</option>
+                                <option value="Star Wars: Heir to the Empire" data-id="31" data-price="2300">Star Wars: Heir to the Empire</option>
+                                <option value="Star Wars: Shadows of the Empire" data-id="32" data-price="2300">Star Wars: Shadows of the Empire</option>
+                                <option value="Star Wars: Lost Stars" data-id="33" data-price="2300">Star Wars: Lost Stars</option>
+                                <option value="Star Wars: Catalyst" data-id="34" data-price="2300">Star Wars: Catalyst</option>
+                                <option value="Star Wars: The Mandalorian" data-id="35" data-price="2300">Star Wars: The Mandalorian</option>
+                            </select>
+                            <p class="product-desc">Choose the Star Wars title you want from the available 19 options, then click Add to Cart.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="5" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn sw-select-btn" data-product-id="5" data-product-name="Star Wars: A New Hope" data-product-price="2300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/books/jujutsu.jpg" alt="Jujutsu Kaisen saga selection">
+                        <div class="product-body">
+                            <h4 class="product-title">Jujutsu Kaisen saga</h4>
+                            <p class="product-tag">6 titles available</p>
+                            <p class="product-price">2600DA</p>
+                            <label class="product-select-label" for="jjk-select">Choose book:</label>
+                            <select id="jjk-select" class="product-select" data-button-selector=".jjk-select-btn">
+                                <option value="Jujutsu Kaisen Volume 1" data-id="6" data-price="2600">Jujutsu Kaisen Volume 1</option>
+                                <option value="Jujutsu Kaisen Volume 2" data-id="14" data-price="2600">Jujutsu Kaisen Volume 2</option>
+                                <option value="Jujutsu Kaisen Volume 3" data-id="15" data-price="2600">Jujutsu Kaisen Volume 3</option>
+                                <option value="Jujutsu Kaisen Volume 4" data-id="36" data-price="2600">Jujutsu Kaisen Volume 4</option>
+                                <option value="Jujutsu Kaisen Volume 5" data-id="37" data-price="2600">Jujutsu Kaisen Volume 5</option>
+                                <option value="Jujutsu Kaisen Volume 6" data-id="38" data-price="2600">Jujutsu Kaisen Volume 6</option>
+                            </select>
+                            <p class="product-desc">Choose the Jujutsu Kaisen title you want from the available 6 books, then click Add to Cart.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="6" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn jjk-select-btn" data-product-id="6" data-product-name="Jujutsu Kaisen Volume 1" data-product-price="2600">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="book-category">
+                <h3>Psychology:</h3>
+                <div class="books-row">
+                    <article class="product-card">
+                        <img src="images/books/atomic habits.jpg" alt="atomic habits">
+                        <div class="product-body">
+                            <h4> Atomic habits </h4>
+                            <p class="product-price">2200DA</p>
+                            <p class="product-desc">A comprehensive guide to building good habits and breaking bad ones, backed by scientific research on behavior change and personal improvement.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="7" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn" data-product-id="7" data-product-name="Atomic habits" data-product-price="2200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/books/the art of letting go.jpg" alt="The Art of Letting Go">
+                        <div class="product-body">
+                            <h4>The Art of Letting Go</h4>
+                            <p class="product-price">2000DA</p>
+                            <p class="product-desc">A self-help book on emotional healing, teaching how to release attachments, forgive, and find inner peace for a more fulfilling life.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="8" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn" data-product-id="8" data-product-name="The Art of Letting Go" data-product-price="2000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/books/power of money.jpg" alt="The Power of Money">
+                        <div class="product-body">
+                            <h4>The Power of Money</h4>
+                            <p class="product-price">2100DA</p>
+                            <p class="product-desc">An exploration of the strange ways people think about money and wealth, offering timeless lessons on financial behavior and decision-making.</p>
+                            <div class="product-controls">
+                                <input type="number" data-product-id="9" value="1" min="1" max="10">
+                                <button class="add-to-cart-btn" data-product-id="9" data-product-name="The Power of Money" data-product-price="2100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="aside-container">
+        
+        <div class="aside-panel">
+            <h4>Shopping Policy</h4>
+            <div class="panel-body">
+                <div class="policy-scroll">
+                    <p>Free shipping on orders over 10000DA! Easy 30-day returns. Secure payment processing. Customer support available 24/7. All products come with manufacturer warranty.</p>
+                </div>
+            </div>
+        </div>
+        <div class="aside-panel cart-summary-panel">
+            <h4>Cart Summary (<span id="cart-count">0</span>)</h4>
+            <div class="panel-body">
+                <div id="cart-list">
+                    <p class="cart-empty">Your cart is empty</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer-content">
+            <div class="student-info">
+                <p><strong>👤Student Name:</strong> MOHAMED</p>
+                <p><strong>📧Email:</strong> MOH.Ham@gmail.com</p>
+                <p><strong>🆔Group:</strong> 8 section1</p>
+            </div>
+            <div class="checkout-section">
+                <p class="footer-total">Total: <span id="footer-total">0.00DA</span></p>
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
