@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
     --primary-color: #ad8968;
     --primary-dark: #8b5e3c;
-     --primary-light: #dbeafe;
+    --primary-light: #dbeafe;
     --secondary-color: #f59e0b;
     --success-color: #4b2e2b;
     --danger-color: #ef4444;
@@ -24,14 +26,12 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--light-gray);
     color: var(--dark-color);
     line-height: 1.6;
     min-height: 100vh;
-   background-image: url(wallp.jpg);
-   
-   
+    background-image: url(wallp.jpg);
 }
 
 a {
@@ -48,48 +48,126 @@ img {
 
 /* ---- Header ---- */
 header {
-    background-color: var(--white);
-    box-shadow: var(--shadow);
-    padding: 20px 40px;
+    background: rgba(139, 94, 60, 0.35);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(216, 195, 165, 0.4);
+    padding: 8px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
     z-index: 100;
-    background-image: url(wallp.jpg);
-    
+    min-height: 56px;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
+/* LOGO OPTION 1: Classic Circle (default) */
 .logo {
-    width: 65px;
-    height: 65px;
-    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* LOGO OPTION 2: Rounded Square - uncomment below to use */
+/*
+.logo {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #5a3a22, #8b5e3c);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white);
-    font-size: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid rgba(255,255,255,0.25);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+*/
+
+/* LOGO OPTION 3: Hexagon - uncomment below to use */
+/*
+.logo {
+    width: 44px;
+    height: 40px;
+    background: linear-gradient(135deg, #6b4423, #a67c52);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 12px;
     font-weight: bold;
 }
+*/
+
+/* LOGO OPTION 4: Diamond - uncomment below to use */
+/*
+.logo {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #4a2e1a, #ad8968);
+    transform: rotate(45deg);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 11px;
+    font-weight: bold;
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.logo span {
+    transform: rotate(-45deg);
+}
+*/
+
+/* LOGO OPTION 5: Badge/Ribbon - uncomment below to use */
+/*
+.logo {
+    width: 44px;
+    height: 44px;
+    background: radial-gradient(circle, #c4a484 0%, #8b5e3c 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: bold;
+    border: 3px double rgba(255,255,255,0.4);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.2);
+}
+*/
 
 .site-title h1 {
-    font-size: 24px;
-    color: var(--dark-color);
+    font-size: 20px;
+    color: #ffffff;
     margin: 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-.site-title p {
-    font-size: 12px;
-    color: var(--gray-color);
+.site-title b {
+    font-size: 11px;
+    color: rgba(255,255,255,0.85);
     margin: 0;
+    font-weight: 500;
 }
 
 .header-right {
@@ -172,11 +250,62 @@ main {
     background-attachment: fixed;
     padding-top: 120px;
 }
+.clothing-page main {
+    background-image: url('images/clothing/background clothes.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 120px;
+}
 
-.books-page .book-category {
+.clothing-page .product-card {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* ---- Home Page ---- */
+.home-page main {
+    background-image: url('images/main/beige background for the main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.home-page .category-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.home-page .category-card {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.home-page .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.home-page .category-card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: #000;
+}
+
+.home-page .category-card .card-body {
+    padding: 20px;
+    text-align: center;
 }
 
 .books-page .product-card {
@@ -423,6 +552,8 @@ margin: auto;
     display: inline-block;
     border: 1px solid rgba(216, 195, 165, 0.4);
     box-shadow: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .book-category .books-row {
@@ -459,6 +590,19 @@ margin: auto;
     border-bottom: 1px solid #e5e7eb;
 }
 
+.product-card img.jeans-img {
+    object-fit: contain;
+    object-position: top center;
+    background: #fff;
+}
+
+.product-card img.top-align {
+    object-fit: contain;
+    object-position: top center;
+    background: transparent;
+    border-bottom: none;
+}
+
 .product-card .product-body {
     padding: 10px;
     flex: 1;
@@ -474,6 +618,9 @@ margin: auto;
     font-weight: 600;
     text-align: center;
     position: relative;
+    display: inline-block;
+    width: fit-content;
+    align-self: center;
 }
 
 .product-price {
@@ -531,6 +678,7 @@ margin: auto;
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 .product-controls input[type="number"] {
@@ -548,7 +696,6 @@ margin: auto;
 }
 
 .add-to-cart-btn {
-    flex: 1;
     padding: 10px 16px;
     background-color: var(--success-color);
     color: var(--white);
@@ -558,15 +705,16 @@ margin: auto;
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .add-to-cart-btn:hover {
     background-color: #2f1b16;
 }
 
-/* ---- Fixed Asides ---- */
+/* ---- Asides ---- */
 .aside-container {
-    position: fixed;
+    position: absolute;
     right: 20px;
     top: 140px;
     width: 260px;
